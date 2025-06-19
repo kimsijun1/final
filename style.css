@@ -44,6 +44,11 @@ header .container {
 }
 header {
     background: url(images/main.jpg) no-repeat center top/cover;
+    filter: grayscale(100%);
+    transition: filter 1.5s ease;
+}
+header:hover {
+    filter: grayscale(0%);
 }
 .renSec {
     background-color: #e6d3b0;
