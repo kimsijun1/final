@@ -1,0 +1,188 @@
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    list-style: none;
+}
+header h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.699);
+    display: inline-block;
+}
+main h2 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    margin-bottom: 80px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+header .container {
+    height: 720px;
+    position: relative;
+    text-align: center;
+    padding-top: 500px;
+}
+header {
+    background: url(images/main.jpg) no-repeat center top/cover;
+    animation: anigrayscale 2s ease forwards;
+}
+@keyframes anigrayscale {
+    0% {
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: grayscale(100%);
+    }
+}
+.renSec {
+    background-color: #e6d3b0;
+    padding: 80px 0;
+}
+.mannerSec {
+    background-color: #ffe89d;
+    padding: 80px 0;
+}
+.baroqueSec {
+    background-color: #b49a68;
+    padding: 80px 0;
+}
+.rococoSec {
+    background-color: #fffd8f;
+    padding: 80px 0;
+}
+.formsec {
+    background-color: #dafff7;
+    padding: 80px 0;
+}
+p, h3 {
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.photogall {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 500px));
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+.photogall img {
+    width: 100%;
+    display: block;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.photogall img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.photogall img:hover {
+    transform: scale(1.5);
+    z-index: 999;
+}
+
+
+
+.photogall .caption {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0px 0;
+}
+footer p {
+    margin: 0;
+}
+
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    background-color: white;
+    margin-top: 5px;
+    padding: 4px 5px;
+    border: 1px solid #cccccc;
+    border-radius: 250px;
+    height: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+form > p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 80px;
+    border-radius: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+} 
+input[type="submit"]:hover {
+    background-color: #48ff00;
+    color: black;
+} 
+
+
+
+
+
+
+@media screen and (max-width:640px) {
+    .container, header nav ul {
+        width: 100%;
+    }
+    body {
+        font-size: 16px;
+    }
+    main h2 {
+        font-size: 44px;
+        margin-bottom: 60px;
+    }
+    .photogall {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .photogall img:hover {
+        transform: none;
+        transition: none;
+    }
+}
