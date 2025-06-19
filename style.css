@@ -44,15 +44,6 @@ header .container {
 }
 header {
     background: url(images/main.jpg) no-repeat center top/cover;
-    animation: anigrayscale 2s ease forwards;
-}
-@keyframes anigrayscale {
-    0% {
-        filter: grayscale(0%);
-    }
-    100% {
-        filter: grayscale(100%);
-    }
 }
 .renSec {
     background-color: #e6d3b0;
@@ -105,7 +96,7 @@ p, h3 {
 
 .photogall img:hover {
     transform: scale(1.5);
-    z-index: 999;
+    z-index: 99;
 }
 
 
